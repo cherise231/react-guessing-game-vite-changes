@@ -9,7 +9,11 @@ const container = document.getElementById("root");
 
 // // creates the root element for the react app
 const root = createRoot(container);
-root.render(<App />);
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
 
 // ReactDOM.render(
 //   <React.StrictMode>
