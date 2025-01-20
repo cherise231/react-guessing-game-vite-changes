@@ -15,9 +15,10 @@ function getRandomNumber() {
 const MAX_ATTEMPTS = 5;
 
 const NumberGuessingGame = () => {
-  //function to handle the input change and submit the guess to the paren component
-  const [numberToGuess, setNumberToGuess] = useState(getRandomNumber());
+  //function to handle the input change and submit the guess to the parent component
 
+  const [numberToGuess, setNumberToGuess] = useState(getRandomNumber());
+  
   const [numberOfGuesses, setNumberOfGuesses] = useState(0);
   const [latestGuess, setLatestGuess] = useState(null);
 
